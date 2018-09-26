@@ -9,6 +9,7 @@ namespace AvaloniaTest
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowModel {theName = "User" };
 #if DEBUG
             this.AttachDevTools();
 #endif
@@ -17,6 +18,7 @@ namespace AvaloniaTest
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+          
         }
     }
 }
